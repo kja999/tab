@@ -22,3 +22,42 @@ body {
 #search-block {
     padding: 50px 0;
 }
+
+@media (prefers-color-scheme: dark) {
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        background-color: #000000;
+        margin: 0 2em;
+    }
+
+    .holder {
+        height: 100%;
+    }
+
+    .ui.vertical.menu {
+        width: initial;
+        background-color: @dark-grey;
+        color: #444444
+    }
+
+    .ui.vertical.menu .active.item {
+        background-color: #777777;
+    }
+
+
+    .ui.vertical.menu .item {
+        background-color: #444444;
+        color: #FFFFFF;
+    }
+
+    .ui.vertical.menu .item > i.icon {
+        float: left;
+    }
+
+    #search-block {
+        padding: 50px 0;
+    }
+}
